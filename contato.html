@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Brasília | Contato</title>
+    <link rel="icon" type="image/png" href="./imgs_projeto/icon_congresso.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="topo">
+        <nav>
+            <a href="index.html">Início</a> |
+            <a href="midia.html">Galeria da Capital</a> |
+            <a href="contato.html">Tours e Reservas</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Roteiros Guiados em Brasília</h2>
+        
+        <table class="tabela-estilizada">
+            <caption>Tabela 1: Nossos Tours Especiais</caption>
+            <thead>
+                <tr>
+                    <th>Nome do Tour</th>
+                    <th>Principais Paradas</th>
+                    <th>Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rota Niemeyer</td>
+                    <td>Catedral, Congresso, Palácio do Planalto</td>
+                    <td>4 horas</td>
+                </tr>
+                <tr>
+                    <td>Ecoturismo no Cerrado</td>
+                    <td>Parque Nacional (Água Mineral), Jardim Botânico</td>
+                    <td>6 horas</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <table class="tabela-estilizada">
+            <caption>Tabela 2: Tabela de Valores (BRL)</caption>
+            <tr>
+                <th>Tamanho do Grupo</th>
+                <th>Valor do Guia (Por Dia)</th>
+            </tr>
+            <tr>
+                <td>Individual ou Casal</td>
+                <td>R$ 250,00</td>
+            </tr>
+            <tr>
+                <td>Grupo Fechado (Até 10 pessoas)</td>
+                <td>R$ 800,00</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Personalize sua Visita (Formulário)</h2>
+        <form action="#">
+            <fieldset>
+                <legend>Dados do Turista</legend>
+                
+             <label for="nome">Nome Completo:</label>
+        <br>
+             <input type="text" id="nome" name="nome" placeholder="Como deseja ser chamado?" required>
+     <br>
+        <br>
+             <label for="email">E-mail para contato:</label>
+    <br>
+             <input type="email" id="email" name="email" required>
+     <br>
+         <br>
+             <label for="data-visita">Data da Visita:</label>
+     <br>
+             <input type="date" id="data-visita" name="data-visita">
+        <br>
+        <br>
+             <label>Preferência de Locomoção no Tour:</label>
+    <br>
+             <input type="radio" id="carro" name="locomocao" value="carro">
+             <label for="carro">Carro com Ar-Condicionado</label>
+             <input type="radio" id="bike" name="locomocao" value="bike">
+             <label for="bike">Bicicleta (Eixo de Lazer)</label>
+    <br>
+        <br>
+             <label>Termos de Saúde Climática:</label>
+        <br>
+             <input type="checkbox" id="termos" name="termos" required>
+             <label for="termos">Estou ciente do clima seco de Brasília e levarei água (Obrigatório)</label>
+    <br>
+        <br>
+             <label for="caminhada">Disposição para caminhadas ao sol (1 = Nenhuma / 10 = Muita):</label><br>
+             <input type="range" id="caminhada" name="caminhada" min="1" max="10">
+    <br>
+        <br>
+             <label for="cor">Escolha a cor do seu boné de brinde do tour:</label><br>
+             <input type="color" id="cor" name="cor">
+    <br>
+        <br>
+             <label for="pessoas">Total de pessoas no grupo:</label><br>
+             <input type="number" id="pessoas" name="pessoas" min="1" value="1">
+    <br>
+        <br>
+             <label for="senha">Crie uma senha de 4 dígitos para acessar suas fotos depois:</label><br>
+             <input type="password" placeholder="****" id="senha" name="senha" maxlength="4">
+    <br>
+        <br>
+             <label for="mensagem">Interesses Específicos (Ex: fotografia, política, gastronomia):</label><br>
+             <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Conte mais sobre o que você gosta..."></textarea>
+    <br>
+        <br>
+                <button type="submit" class="btn-enviar">Agendar Tour</button>
+                <button type="reset" class="btn-limpar">Limpar Dados</button>
+            </fieldset>
+        </form>
+
+        <p class="ancora"><a href="#topo">Voltar ao topo da página ⬆</a></p>
+    </main>
+</body>
+</html>
